@@ -1,8 +1,17 @@
-checkers_board = {}
+board = []
 
-for row in range(1,8):
-  for col in range(1,8):
-    checkers_board[(row,col)] = 0
-    
-    
-print(checkers_board)
+for x in range(1,8):
+  board.append(["0"] * 8)
+
+#define functions
+
+def print_board(board):
+  for row in board:
+    print(" ".join(row))
+
+
+
+
+#function calls
+print_board(board)
+
